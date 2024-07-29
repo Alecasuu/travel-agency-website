@@ -1,5 +1,6 @@
 <?php
-include 'conexion.php';
+include 'conexion.php';  Considera agregar manejo de errores aquí para cubrir casos en los que la API no responda correctamente.
+
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nombre = htmlspecialchars($_POST['nombre']);
